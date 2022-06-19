@@ -20,7 +20,7 @@ const Login = () => {
 
   useEffect(() => {
     signInUser();
-  }, [signInUser]);
+  }, []); //eslint-disable-line
 
   return (
     <div className={styles.Login}>

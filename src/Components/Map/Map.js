@@ -54,7 +54,7 @@ const Map = () => {
       setStops(param);
     };
     getStops(callback);
-  }, []);
+  }, []); //eslint-disable-line
 
   return isLoaded ? (
     <div className={styles.Map}>
