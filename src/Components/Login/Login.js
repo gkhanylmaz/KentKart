@@ -11,16 +11,16 @@ import { AuthContext } from "context";
 import styles from "./Login.module.scss";
 
 const Login = () => {
-  const { signInUser, state } = useContext(AuthContext);
+  const { signInUser } = useContext(AuthContext);
   const navigate = useNavigate();
-  console.log(state);
-  useEffect(() => {
-    signInUser();
-  }, []);
 
   const handleSubmit = (data) => {
     signInUser(data, navigate);
   };
+
+  useEffect(() => {
+    signInUser();
+  }, [signInUser]);
 
   return (
     <div className={styles.Login}>
