@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+// pages
+import MapPage from "Pages/MapPage";
+import LoginPage from "Pages/LoginPage";
+
+// middlewares
+import AuthCheck from "helpers/AuthCheck";
+
+//null   Anyone Can go inside
+//true   only logged in user can go inside
+//false  logged in user can't go inside
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route
+        path="/sign-in"
+        element={
+          <AuthCheck
+            SpecificComponent={LoginPage}
+            requiresAuthentication={false}
+          />
+        }
+      />
+      <Route
+        path="/"
+        element={
+          <AuthCheck
+            SpecificComponent={MapPage}
+            requiresAuthentication={true}
+          />
+        }
+      />
+    </Routes>
   );
-}
+};
 
 export default App;

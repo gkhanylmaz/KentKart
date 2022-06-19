@@ -1,0 +1,36 @@
+.containerFluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.Login {
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  .LoginForm {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    height: 50vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .Logo {
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+  .InputItem {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Input {
+    width: 300px;
+  }
+  .Btn {
+    width: 200px;
+  }
+}

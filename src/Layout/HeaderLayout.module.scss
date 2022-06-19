@@ -1,0 +1,23 @@
+header {
+  .container {
+    margin: auto;
+    max-width: 1200px;
+  }
+  .Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    img {
+      width: 300px;
+    }
+  }
+  .NavIcons {
+    .Icons {
+      font-size: 30px;
+      margin: 0 40px;
+      color: #254D9C;
+    }
+  }
+}
