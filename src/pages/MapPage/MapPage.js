@@ -1,5 +1,5 @@
-import Map from "Components/Map";
-import HeaderLayout from "Layout/HeaderLayout";
+import Map from "components/map";
+import HeaderLayout from "layout/HeaderLayout";
 import React from "react";
 
 const MapPage = () => {

@@ -2,8 +2,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // pages
-import MapPage from "Pages/MapPage";
-import LoginPage from "Pages/LoginPage";
+import MapPage from "pages/MapPage/MapPage";
+import LoginPage from "pages/LoginPage/LoginPage";
 
 // middlewares
 import AuthCheck from "helpers/AuthCheck";
