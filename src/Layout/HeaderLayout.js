@@ -5,8 +5,6 @@ import styles from "./HeaderLayout.module.scss";
 
 // icons
 
-import { FiBell, FiUser } from "react-icons/fi";
-
 const HeaderLayout = () => {
   return (
     <>
@@ -20,11 +18,6 @@ const HeaderLayout = () => {
                 alt="logo"
               />
             </a>
-
-            <div className={styles.NavIcons}>
-              <FiBell className={styles.Icons} />{" "}
-              <FiUser className={styles.Icons} />
-            </div>
           </div>
         </div>
       </header>
